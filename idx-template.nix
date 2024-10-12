@@ -36,6 +36,5 @@ pkgs.mkShell {
       ${if sample != "none" then "--sample=${sample}" else ""} \
       ${if blank then "-e" else ""}
 
-    echo "Project created successfully at $out"
   '';
 }
